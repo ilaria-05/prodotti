@@ -3,13 +3,13 @@
 -- prezzo unitario
 -- quantità
 
-CREATE DATABASE prodotti;
+--CREATE DATABASE prodotti;
 
 CREATE TABLE prodotti(
     codice_prodotto char(5) PRIMARY KEY,
     descrizione     varchar(50),
     prezzo_unitario decimal(6,2),
-    quantita        int,
+    quantita        int
 );
 
 INSERT INTO prodotti(codice_prodotto, descrizione, prezzo_unitario, quantita) VALUES
