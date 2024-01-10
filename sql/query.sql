@@ -1,7 +1,4 @@
--- codice prodotto
--- descrizione
--- prezzo unitario
--- quantità
+-- codice prodotto, descrizione, prezzo unitario, quantità --
 
 --CREATE DATABASE prodotti;
 
