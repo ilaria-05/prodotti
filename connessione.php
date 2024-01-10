@@ -2,7 +2,7 @@
 <html>
     <head></head>
     <body>
-        <p align= 'center'><strong>Connessione al database</strong><br><br><br>
+        <p style="text-align: center"><strong>Connessione al database</strong><br><br><br>
         <?php
             $hostname = "localhost";
             $username = "root";
@@ -15,7 +15,8 @@
             else 
                 print"<br><br><strong>Connessione avvenuta correttamente</strong><br><br>";
             mysqli_close($conn);
-            print"<strong>Ora la connessione è chiusa</strong>";
+            print"<strong>Ora la connessione è chiusa</strong>"; 
         ?>
+        </p>
     </body>
 </html>
