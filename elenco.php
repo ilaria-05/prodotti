@@ -19,7 +19,7 @@
             $risultato = mysqli_query($conn, $query);
             if(!$risultato)
             {
-                print "Errore nel comando";
+                print "Errore nel comando SQL";
                 exit();
             }
             $riga = mysqli_fetch_array($risultato);
