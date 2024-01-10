@@ -1,6 +1,6 @@
 -- codice prodotto, descrizione, prezzo unitario, quantità --
 
---CREATE DATABASE prodotti;
+-- CREATE DATABASE prodotti;
 
 CREATE TABLE prodotti(
     codice_prodotto char(5) PRIMARY KEY,
