@@ -4,7 +4,7 @@
     <body>
     <h1>Elenco dei prodotti:</h1>
         <?php
-        
+    
         $hostname = "localhost";
         $username = "root";
         $password = "";
@@ -32,8 +32,6 @@
             print "Attenzione!!! codice prodotto $codice non presente ";
         }
         mysqli_close($conn);
-        
-
         ?>
     </body>
 </html>
