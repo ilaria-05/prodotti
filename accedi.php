@@ -39,9 +39,13 @@
     </head>
         <body>
             <ul>
-                <li><a href="http://localhost/autenticazione/registrati.html">Registrati</a></li>
-                <li><a href="http://localhost/autenticazione/accedi.html">Accedi</a></li>
-            </ul><br><br> <br><br> 
+                <li><a href="http://localhost/prodotti/homepage.html">Homepage</a></li>
+                <li><a href="http://localhost/prodotti/elenco.php">Tabella prodotti</a></li>
+                <li><a href="http://localhost/prodotti/codice_prodotto.html">Inserimento codice prodotto</a></li>
+                <li><a href="http://localhost/prodotti/inserisci_prodotto.html"> Inserimento nuovo prodotto</a></li> 
+                <li><a href="http://localhost/prodotti/registrazione.html">Registrati</a></li>
+                <li><a href="http://localhost/prodotti/accedi.html">Accedi</a></li>
+            </ul><br><br> <br><br>
             <?php 
                 $hostname = "localhost";
                 $username = "root";
@@ -59,7 +63,7 @@
                 $password = $_POST['Password'];
                 if ($user == "|| $password =="){
                     print "Campi vuoti";
-                    print "<br><a href='http://localhost/autenticazione/accedi.html'>ritorna ad accedi</a>";
+                    print "<br><a href='http://localhost/prodotti/accedi.html'>ritorna ad accedi</a>";
                 } else {
                     $query ="Select * from utenti where username = '$user' && password  = '$password'";
                     $risultato = mysqli_query($conn, $query);

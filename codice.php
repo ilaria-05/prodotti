@@ -38,11 +38,13 @@
     </head>
     <body>
         <ul>
-            <li><a href="http://localhost/prodotti/homepage.html">Homepage</a></li>
-            <li><a href="http://localhost/prodotti/elenco.php">Tabella prodotti</a></li>
-            <li><a href="http://localhost/prodotti/codice_prodotto.html">Inserimento codice prodotto</a></li>
-            <li><a href="http://localhost/prodotti/inserisci_prodotto.html"> Inserimento nuovo prodotto</a></li> 
-        </ul><br><br><br><br>
+          <li><a href="http://localhost/prodotti/homepage.html">Homepage</a></li>
+          <li><a href="http://localhost/prodotti/elenco.php">Tabella prodotti</a></li>
+          <li><a href="http://localhost/prodotti/codice_prodotto.html">Inserimento codice prodotto</a></li>
+          <li><a href="http://localhost/prodotti/inserisci_prodotto.html"> Inserimento nuovo prodotto</a></li> 
+          <li><a href="http://localhost/prodotti/registrazione.html">Registrati</a></li>
+          <li><a href="http://localhost/prodotti/accedi.html">Accedi</a></li>
+        </ul><br><br> <br><br>
     <h1>Elenco dei prodotti:</h1>
         <?php
     
