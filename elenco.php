@@ -47,6 +47,10 @@
         </ul><br><br> <br><br>
         <h1 style= "font size='5'">Elenco prodotti</h1>
         <?php
+            if (!isset($_COOKIE['User'])){
+                print "Prima devi essere autenticato";
+                print "<br><a href='http://localhost/prodotti/accedi.html'>Accedi</a>";
+              }else{
             $hostname = "localhost";
             $username = "root";
             $password = "";
@@ -82,7 +86,7 @@
             } else {
                 print "Attenzione! Non ci sono prodotti presenti";
             }
-            mysqli_close($conn); 
+            mysqli_close($conn); }
         ?>
         </p>
     </body>

@@ -41,10 +41,16 @@
         <li><a href="http://localhost/prodotti/home.html">Homepage</a></li>
         <li><a href="http://localhost/prodotti/elenco.php">Tabella prodotti</a></li>
         <li><a href="http://localhost/prodotti/codice_prodotto.php">Inserimento codice prodotto</a></li>
-        <li><a href="http://localhost/prodotti/inserimento_prodotto.html"> Inserimento nuovo prodotto</a></li> 
+        <li><a href="http://localhost/prodotti/inserisci_prodotto.php"> Inserimento nuovo prodotto</a></li>  
         <li><a href="http://localhost/prodotti/registrati.html">Registrati</a></li>
         <li><a href="http://localhost/prodotti/accedi.html">Accedi</a></li>
       </ul><br><br> <br><br>
+      <?php
+        if (!isset($_COOKIE['User'])){
+          print "Prima devi essere autenticato";
+          print "<br><a href='http://localhost/prodotti/accedi.html'>Accedi</a>";
+        }else{
+      ?>
         <h1>Inserimento di un nuovo prodotto</h1>
         <form method='post' action = 'inserimento_prodotto.php'>
             Codice prodtotto: <input type='text' name='codice_prodotto' size='10'>
@@ -57,6 +63,7 @@
             <br><br>
             <input type='submit' value='Inserisci'> &nbsp;&nbsp;&nbsp;
             <input type='reset' value='Reset'>
+        <?php } ?>
         </form>
     </body>
 </html>

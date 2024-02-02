@@ -38,26 +38,23 @@
     </head>
     <body> 
     <br><br>
-      <?php
-        if (!isset($_COOKIE[$user])){
-          print ""
-        }else{
-
-        }
-        $user = $_COOKIE['User'];
-        if($user == ""){
-          print "Devi prima autenticarti";
-          print "<br><a href='http://localhost/prodotti/registrati.html'>Registrati</a>";
-        }else{
-      ?>
-        <ul>
+    <ul>
           <li><a href="http://localhost/prodotti/home.html">Homepage</a></li>
           <li><a href="http://localhost/prodotti/elenco.php">Tabella prodotti</a></li>
           <li><a href="http://localhost/prodotti/codice_prodotto.php">Inserimento codice prodotto</a></li>
-          <li><a href="http://localhost/prodotti/inserimento_prodotto.html"> Inserimento nuovo prodotto</a></li> 
+          <li><a href="http://localhost/prodotti/inserisci_prodotto.php"> Inserimento nuovo prodotto</a></li>  
           <li><a href="http://localhost/prodotti/registrati.html">Registrati</a></li>
           <li><a href="http://localhost/prodotti/accedi.html">Accedi</a></li>
       </ul><br><br> <br><br>
+      <?php
+        if (!isset($_COOKIE['User'])){
+          print "Prima devi essere autenticato";
+          print "<br><a href='http://localhost/prodotti/accedi.html'>Accedi</a>";
+        }else{
+
+      
+      ?>
+      
         <p style= "font-size: 5">Ricerca prodotti</p>
         <form method='post' action = 'codice.php'>
             Codice prodtotto: <input type='text' name='codice' size='10'>
