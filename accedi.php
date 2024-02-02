@@ -50,7 +50,7 @@
                 $hostname = "localhost";
                 $username = "root";
                 $password = "";
-                $dbname = "utenti";
+                $dbname = "prodotti";
                 //connesssione al server sql con selezione del database
                 $conn = mysqli_connect($hostname, $username, $password, $dbname);
                 if(!$conn)
@@ -74,7 +74,7 @@
                     $riga = mysqli_fetch_array($risultato);
                     if ($riga){
                         print "Benvenuto ". $riga['Nome']." ".$riga['Cognome'];
-                        setcookie("user", $user, time()+60);
+                        setcookie("User", $user, time()+60);
                     } else {
                         print "Username o Password errate";
                     }

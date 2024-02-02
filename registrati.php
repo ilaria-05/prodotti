@@ -14,7 +14,7 @@
                 $hostname = "localhost";
                 $username = "root";
                 $password = "";
-                $dbname = "utenti";
+                $dbname = "prodotti";
                 //connesssione al server sql con selezione del database
                 $conn = mysqli_connect($hostname, $username, $password, $dbname);
                 if(!$conn)
