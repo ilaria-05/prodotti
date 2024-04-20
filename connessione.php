@@ -37,6 +37,12 @@
             </style>
     </head>
     <body>
+        <ul>
+        <li><a href="http://localhost/prodotti/home.html">Homepage</a></li>
+        <li><a href="http://localhost/prodotti/elenco.php">Tabella prodotti</a></li>
+        <li><a href="http://localhost/prodotti/codice_prodotto.html">Inserimento codice prodotto</a></li>
+        <li><a href="http://localhost/prodotti/inserimento_prodotto.php"> Inserimento nuovo prodotto</a></li> 
+      </ul><br><br> <br><br>
         <p style="text-align: center"><strong>Connessione al database</strong><br><br><br>
         <?php
             $hostname = "localhost";
