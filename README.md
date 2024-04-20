@@ -1,4 +1,5 @@
 SPIEGAZIONE DEL FUNZIONAMENTO DELL'APPLICAZIONE 
+
 Questa applicazione che ho progettato si riferisce al magazzino e alla gestione dei prodotti.
 I principali linguaggi che ho utilizzato sono SQL per il database, PHP e HTML per la visione e l'inserimento del prodotto.
 Il database e le pagine PHP e HTML sono connesse tra di loro.
